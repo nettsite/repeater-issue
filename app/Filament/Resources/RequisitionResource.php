@@ -38,12 +38,12 @@ class RequisitionResource extends Resource
                         Select::make('specimen_container_id')
                             ->relationship('specimen_container', 'description')
                             ->searchable(['description', 'colour', 'type'])
-                            ->hiddenLabel()
+                            // ->hiddenLabel()
                             ->required()
                             ->columnSpan(8),
                         TextInput::make('number_of_containers')
                             ->numeric()
-                            ->hiddenLabel()
+                            // ->hiddenLabel()
                             ->required()
                             ->columnStart(6)
                             ->columnSpan(1),
